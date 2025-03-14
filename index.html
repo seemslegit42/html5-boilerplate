@@ -17,79 +17,85 @@
     <link rel="icon" href="path/to/favicon.ico">
     <link rel="apple-touch-icon" href="path/to/apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dist/styles.css">
     <link rel="manifest" href="site.webmanifest">
 </head>
-<body>
-    <header>
-        <h1>Welcome to ΛΞVON</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#innovations">Innovations</a></li>
-                <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#contact">Contact</a></li>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-green-600 text-white p-4">
+        <h1 class="text-center text-3xl font-bold">Welcome to ΛΞVON</h1>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-4">
+                <li><a href="#home" class="hover:underline">Home</a></li>
+                <li><a href="#about" class="hover:underline">About</a></li>
+                <li><a href="#innovations" class="hover:underline">Innovations</a></li>
+                <li><a href="#solutions" class="hover:underline">Solutions</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="home">
-            <h1>Welcome to ΛΞVON</h1>
-            <p>Transforming the future with limitless clean energy, secure digital life, and universal knowledge.</p>
+    <main class="p-8">
+        <section id="home" class="mb-8">
+            <h1 class="text-4xl font-bold mb-4">Welcome to ΛΞVON</h1>
+            <p class="mb-4">Transforming the future with limitless clean energy, secure digital life, and universal knowledge.</p>
             <div class="slideshow">
-                <img src="path/to/solar-tree.jpg" alt="3D-Printed Solar Tree">
-                <img src="path/to/geothermal.jpg" alt="Geothermal Energy">
-                <img src="path/to/ai-cybersecurity.jpg" alt="AI Cybersecurity Interface">
-                <img src="path/to/personalized-learning.jpg" alt="Personalized Learning Platform">
+                <img src="path/to/solar-tree.jpg" alt="3D-Printed Solar Tree" class="w-full mb-4">
+                <img src="path/to/geothermal.jpg" alt="Geothermal Energy" class="w-full mb-4">
+                <img src="path/to/ai-cybersecurity.jpg" alt="AI Cybersecurity Interface" class="w-full mb-4">
+                <img src="path/to/personalized-learning.jpg" alt="Personalized Learning Platform" class="w-full mb-4">
             </div>
         </section>
-        <section id="about">
-            <h2>About Us</h2>
+        <section id="about" class="mb-8">
+            <h2 class="text-3xl font-bold mb-4">About Us</h2>
             <p>ΛΞVON is at the forefront of innovation in energy, cybersecurity, and education.</p>
         </section>
-        <section id="innovations">
-            <h2>Innovations</h2>
-            <div class="innovation">
-                <h3>ΛΞVΘN Quantum Renewables</h3>
+        <section id="innovations" class="mb-8">
+            <h2 class="text-3xl font-bold mb-4">Innovations</h2>
+            <div class="innovation mb-4">
+                <h3 class="text-2xl font-bold mb-2">ΛΞVΘN Quantum Renewables</h3>
                 <p>Revolutionizing energy with 3D-printed solar trees and geothermal innovations. We're not just creating solar panels; we're designing futuristic energy solutions that are sustainable and beautiful.</p>
             </div>
-            <div class="innovation">
-                <h3>ΛΞVΘN Labs</h3>
+            <div class="innovation mb-4">
+                <h3 class="text-2xl font-bold mb-2">ΛΞVΘN Labs</h3>
                 <p>Our innovation hub where cutting-edge technologies like AI-powered smart grids and sustainable energy solutions are being developed.</p>
             </div>
-            <div class="innovation">
-                <h3>ΛΞVΘN BLΛCK</h3>
+            <div class="innovation mb-4">
+                <h3 class="text-2xl font-bold mb-2">ΛΞVΘN BLΛCK</h3>
                 <p>AI-powered cybersecurity that anticipates and neutralizes threats in real-time, ensuring your digital life is secure.</p>
             </div>
-            <div class="innovation">
-                <h3>ΛΞVΘN Paideia</h3>
+            <div class="innovation mb-4">
+                <h3 class="text-2xl font-bold mb-2">ΛΞVΘN Paideia</h3>
                 <p>Revolutionizing education with personalized AI learning platforms. From tailored content to interactive tools, we're making learning universally accessible.</p>
             </div>
         </section>
-        <section id="solutions">
-            <h2>Solutions</h2>
+        <section id="solutions" class="mb-8">
+            <h2 class="text-3xl font-bold mb-4">Solutions</h2>
             <p>Integrated solutions across energy, security, and education sectors.</p>
         </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
+        <section id="contact" class="mb-8">
+            <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+            <form id="contact-form" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium">Name:</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium">Email:</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium">Message:</label>
+                    <textarea id="message" name="message" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"></textarea>
+                </div>
+                <button type="submit" class="bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700">Submit</button>
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="bg-gray-800 text-white p-4 text-center">
         <p>&copy; 2025 ΛΞVON. All rights reserved.</p>
-        <ul>
-            <li><a href="https://twitter.com/aevon" target="_blank">Twitter</a></li>
-            <li><a href="https://linkedin.com/company/aevon" target="_blank">LinkedIn</a></li>
-            <li><a href="https://instagram.com/aevon" target="_blank">Instagram</a></li>
+        <ul class="flex justify-center space-x-4 mt-4">
+            <li><a href="https://twitter.com/aevon" target="_blank" class="hover:underline">Twitter</a></li>
+            <li><a href="https://linkedin.com/company/aevon" target="_blank" class="hover:underline">LinkedIn</a></li>
+            <li><a href="https://instagram.com/aevon" target="_blank" class="hover:underline">Instagram</a></li>
         </ul>
     </footer>
     <script src="app.js"></script>
