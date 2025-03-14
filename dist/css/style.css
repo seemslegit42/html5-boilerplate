@@ -11,6 +11,15 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   color: #222;
   font-size: 1em;
@@ -83,6 +92,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+header {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
 
 /* ==========================================================================
    Helper classes

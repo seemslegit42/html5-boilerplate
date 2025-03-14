@@ -1,0 +1,20 @@
+/* ...existing code... */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* ...existing code... */
